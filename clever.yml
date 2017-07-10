@@ -1,0 +1,7 @@
+slack_api_token: "replace_me" #Get it form https://api.slack.com/custom-integrations/legacy-tokens
+cleverbot_key: "replace_me" # Get it from https://www.cleverbot.com/api/my-account/
+log_file: "./clever.log" # Location to log TODO
+bot_name: "Machine"
+emoji: ":robot_face:" #TODO
+channel: "#random" #Channel Name
+reply_factor: 10 # % of chance to reply to message when not summoned by the bot name.
