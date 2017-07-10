@@ -2,9 +2,15 @@
 
 This bot replies to messages using cleverbot api in a given slack channel. 
 
+# What can it do?
+* Checks if a host is up or down using ping
+* Replies to messages using cleverbot api
+* More features to be added.
+
+
 # Requirements
 * Python 2.7 environment
-* yaml, slackclient, requests python packages installed
+* yaml, slackclient and requests Python packages installed
 
 # Variables
 ```
@@ -25,14 +31,20 @@ reply_factor: 10 # % of messages to reply to when bot username isn't in the mess
 # Use
 After running, you should see a help message printed on the slack channel. You can interect with bot by writing bot name on the message.  
 Example: if the bot name is Machine, you can ask 
+
 ```
 @Machine what is 1+1
 Machine:2.
 OR
 Machine roll dice
 Machine:I got a three.
+OR
+@Machine ping google.com
+Machine: google.com is up!
 ```
+
+![Alt text](/screenshot.png?raw=true "I am the Machine")
 
 
 # Data/Privacy Policy
-Replies generated through cleverbot api. Cleverbot will decide what to do with your data. See http://www.cleverbot.com/privacy
+Replies generated through cleverbot api. Read cleverbot's privacy policy here: http://www.cleverbot.com/privacy
