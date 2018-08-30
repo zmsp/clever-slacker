@@ -111,6 +111,7 @@ def parseHostname(pingText):
 #Parses slack messages and replies
 def handleMessage(message):
     log("Asked:" + message)
+    reply = ""
     if u"@%s help" % (username) in event[0]["text"]:
         reply = getHelpMessage()
     elif  u"@%s die" % (username) in event[0]["text"]:
@@ -124,10 +125,10 @@ def handleMessage(message):
     elif reply_factor != 0 and reply_factor > randint(1, 100):
         reply = askCleverBot(message)
 
-    try:
+    if reply != "":
         log("Replied:" + message)
         sendMsg(reply);
-    except NameError:
+    else:
         log("Nothing to reply")
 
 
