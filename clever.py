@@ -146,7 +146,7 @@ if sc.rtm_connect():
                      continue
                  # handler
                  handleMessage(event[0]["text"])
-     except Exception:
-        log("Exception thrown", Exception)
+     except Exception, e:
+        log("Exception thrown", e)
 
      sleep(.3)
